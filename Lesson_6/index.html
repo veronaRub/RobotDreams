@@ -3,9 +3,47 @@
     <head>
         <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png">
         <title>Lesson_6 - version 6 main</title>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+        </style>
     </head>
     <body>
-        <h1>Lesson_6</h1> 
-        <p>Hello World</p> 
+        <h1>Hire Me</h1>
+        <h3>Contact information</h3>
+        <table border="1">
+            <tr>
+                <th>Phone</th>
+                <td>+38(097)742-80-22</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Kyiv</td>
+            </tr>
+        </table>
+        <br>
+        <form action="/">
+            <labeL for="email">E-mail*</labeL>
+            <input type="email" id="email" name="email*" placeholder="e-mail" required>
+            <br>
+            <br>
+            <labeL for="exp">Description</labeL>
+            <textarea id="exp" rows="5" cols="28" minlength="10" maxlength="100">descriptions</textarea>
+            <br>
+            <br>
+            <label for="work-type">Work type:</label>
+            <select id="work-type" name="work-type">
+              <option value="volvo">Full-time</option>
+              <option value="saab">Part-time</option>
+              <option value="fiat">Self-employed</option>
+              <option value="audi">Working from home</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Hire me" name="hire-me">
+            <input type="hidden" name="Hire.me" value="secret-velue">
+        </form>
     </body>
 </html>
